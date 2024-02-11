@@ -20,7 +20,7 @@ public class timeCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTime = Time.time.ToString("F3");
+        currentTime = Time.timeSinceLevelLoad.ToString("F3");
 
         timeCountText.text = "Time: " + currentTime;
     }

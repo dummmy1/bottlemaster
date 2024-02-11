@@ -7,7 +7,7 @@ public class InstBottle : MonoBehaviour
     List<GameObject> prefabList = new List<GameObject>();
     //public GameObject bottlePrefab;
     public GameObject bottlePrefab;
-    private float bottleCooldownTime = 1;
+    private float bottleCooldownTime = 10;
     public GameObject garbageBin;
     private float xPos;
     private float yPos;
@@ -40,7 +40,7 @@ public class InstBottle : MonoBehaviour
 
         if (Time.time > bottleCooldownTime)
         {
-            bottleCooldownTime += 2;
+            bottleCooldownTime += 20;
             int prefabIndex = UnityEngine.Random.Range(0, prefabList.Count);
             Instantiate(prefabList[prefabIndex], new Vector3(xPos, yPos, zPos), Quaternion.identity);
             Instantiate(prefabList[prefabIndex], new Vector3(xPos, yPos, zPos), Quaternion.identity);

@@ -22,7 +22,7 @@ public class buyEnd : MonoBehaviour
     {
         if (other.gameObject.tag == "buyEnd")
         {
-            if (Input.GetKeyDown(KeyCode.E) && MoneyBag.moneyInBag >= 50)
+            if (Input.GetKeyDown(KeyCode.E) && MoneyBag.moneyInBag >= 200)
             {
                 SceneManager.LoadScene(SceneToLoad);
                 endTime.endTimeString = timeCounter.currentTime;

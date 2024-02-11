@@ -15,7 +15,7 @@ public class bottleSpawner : MonoBehaviour
 
     
 
-    private float bottleTime = 1;
+    private float bottleTime = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +39,7 @@ public class bottleSpawner : MonoBehaviour
     void bottleSpawnTimer()
     {
         
-        if (Time.time > bottleTime)
+        if (Time.timeSinceLevelLoad > bottleTime)
         {
 
 

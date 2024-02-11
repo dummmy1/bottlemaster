@@ -9,6 +9,9 @@ public class PauseMenu : MonoBehaviour
     private static bool cursorLocked = true;
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        cursorLocked = true;
+        Cursor.visible = false;
         Time.timeScale = 1;
     }
     void Update()

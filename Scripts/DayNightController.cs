@@ -19,7 +19,6 @@ public class DayNightController : MonoBehaviour
 
     public void Start()
     {
-        //Needed to make everything work
         uiObject.SetActive(false);
         sunInitialIntensity = sun.intensity;
         player = GameObject.Find("Player");
@@ -27,7 +26,6 @@ public class DayNightController : MonoBehaviour
         storeDoor = GameObject.Find("Door");
         storeDoor.SetActive(true);
     }
-    //Controls sun rotation
     public void Update()
     {
         UpdateSun();
@@ -68,7 +66,6 @@ public class DayNightController : MonoBehaviour
     }
     public void OnTriggerStay(Collider other)
     {
-        //Prevents player for being in store during night.
         if (currentTimeOfDay < 0.23 || currentTimeOfDay > 0.75)
         {
             other.transform.position = teleportTarget.transform.position;
@@ -76,7 +73,6 @@ public class DayNightController : MonoBehaviour
             StartCoroutine("WaitForSec");
         }
     }
-    //Removes the text
     IEnumerator WaitForSec()
     {
         yield return new WaitForSeconds(5);

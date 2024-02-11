@@ -83,6 +83,12 @@ public class MouseLook : MonoBehaviour {
         return Input.GetAxis("Mouse Y");
     }
 
+    public void changeSens(float newSens)
+    {
+        sensitivityX = newSens;
+        sensitivityY = newSens;
+    }
+
     //void UpdateCursorLock()
     //{
     //    if (cursorLocked)
@@ -105,5 +111,5 @@ public class MouseLook : MonoBehaviour {
     //            cursorLocked = true;
     //        }
     //    }
-   // }
+    // }
 }

@@ -13,6 +13,9 @@ public class BottleBag : MonoBehaviour
     void Start()
     {
         bottlesInBagText = GetComponent<Text>();
+
+        //reset bottle score
+        bottlesInBag = 0;
     }
 
     // Update is called once per frame
