@@ -8,5 +8,11 @@ It was made for a school project
 
 - strafemovement.cs is copy-paste of quake's c++ code that is converted to c# to work with unity
 
+![Image Alt Text](Screenshots/Screenshot%20(73).png)
+
+
+
+
+
 ![Image Alt Text](Screenshots/Screenshot%20(72).png)
 
